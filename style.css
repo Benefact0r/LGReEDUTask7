@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxContainer1 {
+    border: solid 15px;
+
+    margin: 15px;
+
+    display: grid;
+
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 25px;
+
+    grid-template-areas: 
+    "header header headerHalf double"
+    "footerHalf footer footer double"
+}
+
+.boxClass1 {
+    grid-area: header;
+    background-color: #733FC8;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+
+    display: grid;
+
+}
+
+/* .boxClass1A {
+
+} */
+
+.boxClass1B {
+    font-family: Barlow Semi Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+
+    width: 476px;
+}
+
+.boxClass1C {
+    font-family: Barlow Semi Condensed;
+    color: #CFCFCF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.boxClass2 {
+    grid-area: footer;
+    background-color: #19202D; 
+}
+
+.headerHalf {
+    grid-area: headerHalf;
+    background-color: #48556A;
+}
+
+.footerHalf {
+    grid-area: footerHalf;
+    background-color: #FFF;
+}
+
+.boxClassDouble {
+    grid-area: double;
+    background-color: #FFF;
+}
+
+
+.ovalImageSource {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
